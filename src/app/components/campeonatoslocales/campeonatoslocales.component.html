@@ -1,0 +1,12 @@
+
+<div class="card-columns" >
+  <div class="card animated fadeIn fast" *ngFor="let local of locales;let i = index">
+    <div class="card-body">
+      <h5 class="card-title"  class="text-center">{{ local.nombre }}</h5>
+      <img [src]= " local.img "class="figure-img img-fluid rounded" alt="Responsive image">
+<br>
+          <!-- nos permite ir a la pagina del campeonato-->
+          <button type="button" (click)="verLocal(i)" class="btn btn-outline-primary btn-block">Ver más ...</button>
+  </div>   
+  </div>
+</div>

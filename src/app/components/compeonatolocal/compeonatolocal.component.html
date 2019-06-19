@@ -1,0 +1,68 @@
+<div class="card" >
+    <h2 class="display-4" >{{ local.nombre }}</h2>
+    <img [src]= " local.imgtrofeo "class="rounded mx-auto d-block" alt="Responsive image">
+    <div class="card-body">
+
+      <!--Historia-->
+      <button (click)=" mostrar = !mostrar" class="btn btn-outline-primary btn-block">
+            ¿Qué es?
+        </button> 
+ <div class="card mb-3" >
+    <div *ngIf="mostrar" class="card-body">
+        <h3 class="text-center">¿Qué es {{ local.nombre }} ?</h3>
+        <p class="card-text">Creación:<small class="text-muted"> {{ local.fundacion }}</small></p>
+        <p class="card-text">{{ local.historia }}</p>
+      </div>
+</div>
+
+
+<!--campeones-->
+<button (click)=" mostrarcampeones = !mostrarcampeones" class="btn btn-outline-primary btn-block">
+        Campeones
+    </button> 
+    
+<div class="col" *ngIf="mostrarcampeones">
+    <h3 class="text-center">Campeones</h3>
+   <h4>Campeón Actual: <small>{{ local.campeonActual }}</small></h4>
+    <br>
+    <ul class="list-group">
+            <li *ngFor="let campeon of local.campeones;let i = index;" class="list-group-item">
+               {{ i + 1 }}) {{ campeon }} </li>
+        </ul>
+
+</div>
+
+<!--goleadores-->
+<button (click)=" mostrargoleadores = !mostrargoleadores" class="btn btn-outline-primary btn-block">
+        Goleadores
+    </button> 
+<div class="col" *ngIf="mostrargoleadores">
+    <h3 class="text-center" >Goleadores</h3>
+    <hr>
+    <ul class="list-group">
+            <li *ngFor="let goleador of local.goleadores;let i = index" class="list-group-item">
+               {{ i + 1 }} - {{ goleador }} </li>
+          </ul>
+</div>
+
+
+
+<!--entrenadores-->
+<button (click)=" mostrardt = !mostrardt" class="btn btn-outline-primary btn-block">
+        Entrenadores
+    </button> 
+    
+<div class="col" *ngIf="mostrardt">
+    <h3 class="text-center" >Entrenadores</h3>
+    <hr>
+    <ul class="list-group">
+            <li *ngFor="let dt of local.entrenadores;let i = index" class="list-group-item">
+               {{ i + 1 }} - {{ dt }} </li>
+          </ul>
+</div>
+
+
+<a [routerLink]="['/campeonatoslocales']" class="btn btn-danger btn-block">Regresar</a>
+    </div>
+    
+  </div>

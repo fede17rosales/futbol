@@ -1,0 +1,71 @@
+<div class="card">
+    <img [src]= " equipo.imgescudo "class="rounded mx-auto d-block" alt="Responsive image">
+    <h2 class="display-4" >{{ equipo.nombre }}</h2>
+  
+    <div class="card-body">
+       <!--historia-->
+       <button (click)=" mostrarhistoria = !mostrarhistoria" class="btn btn-outline-primary btn-block">
+        Historia
+    </button> 
+      <div class="card mb-3" *ngIf="mostrarhistoria">
+          <div class="card-body" >
+              <h3>Un poco de nuestra historia</h3>
+              <p class="card-text">Creación:<small class="text-muted"> {{ equipo.fundacion }}</small></p>
+            <p class="card-text">{{ equipo.bio }}</p>
+          </div>
+        </div>
+
+      
+        <!--camiseta-->
+        <button (click)=" mostrarcamiseta = !mostrarcamiseta" class="btn btn-outline-primary btn-block">
+            Camiseta
+        </button> 
+        <div class="card mb-3" *ngIf="mostrarcamiseta">
+            <h3>Nuestra Segunda piel</h3>
+            <img [src]= " equipo.camiseta "class="figure-img img-fluid rounded" alt="...">
+            <div class="card-body">
+              <p class="card-text">{{ equipo.historiacamiseta }}</p>
+            </div>
+          </div>
+
+        
+          <!--estadio-->
+          <button (click)=" mostrarestadio = !mostrarestadio" class="btn btn-outline-primary btn-block">
+            Estadio
+        </button> 
+          <div class="card mb-3" *ngIf="mostrarestadio" >
+              <h3>Nuestro lugar: {{ equipo.nomestadio }}</h3>
+              <img [src]= " equipo.imgestadio "class="rounded mx-auto d-block" alt="...">
+              <div class="card-body">
+                  <p class="card-text">Creación: <small class="text-muted">{{ equipo.fechaestadio }}.</small></p>
+                  <p class="card-text">Dirección: <small class="text-muted">{{ equipo.ubicacion }}.</small></p>
+                </div>
+            </div>
+           
+          <!--hinchada--> <button (click)=" mostrarapodo = !mostrarapodo" class="btn btn-outline-primary btn-block">
+                Apodo
+            </button> 
+             <div class="card mb-3" *ngIf="mostrarapodo">
+              <h3>¿Porque nos dicen {{ equipo.apodo }}?</h3>
+              <img [src]= " equipo.imghinchada "class="rounded mx-auto d-block" alt="...">
+              <div class="card-body">
+                <p class="card-text">{{ equipo.explicacion }}</p>
+              </div>
+            </div>
+           
+          <!--idolo-->
+          <button (click)=" mostraridolo = !mostraridolo" class="btn btn-outline-primary btn-block">
+            El Ídolo
+        </button> 
+          <div class="card mb-3" *ngIf="mostraridolo">
+              <div class="card-body">
+                  <h3 class="card-title">El ídolo:{{ equipo.idolo }}</h3>
+                <img [src]= " equipo.imgidolo "class="rounded mx-auto d-block" alt="...">
+                <p class="card-text">{{ equipo.descripidolo }}</p>
+              </div>
+            </div>
+           
+
+    </div>
+    <a [routerLink]="['/equipos']" class="btn btn-danger btn-block">Regresar</a>
+  </div>

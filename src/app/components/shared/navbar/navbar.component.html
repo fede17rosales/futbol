@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">
+      <link rel="icon" type="image/x-icon" href="/src/toque.png">
+    </a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto ">
+
+      <li class="nav-item " >
+        <a class="nav-link" [routerLink]="['inicio']">Inicio</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" [routerLink]="['equipos']">Equipos Argentinos</a>
+      </li>
+      <li class="nav-item" >
+          <a class="nav-link" [routerLink]="['campeonatoslocales']" >Campeonatos Locales</a>
+        </li>
+      <li class="nav-item" >
+          <a class="nav-link" [routerLink]="['campeonatosinter']">Campeonatos Internacionales</a>
+      </li>
+      <li class="nav-item" >
+          <a class="nav-link" href="#">Seleccion Nacional</a>
+      </li>
+      
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Equipo Argentino..." aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="button">Buscar</button>
+    </form>
+  </div>
+</nav>
