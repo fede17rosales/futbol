@@ -1,0 +1,26 @@
+<h1>Buscando: <small>{{ termino }}</small></h1>
+
+<div class="row animated fadeIn fast" *ngIf="equipos.length == 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+No existen resultados con el término: {{ termino }}
+    </div>
+  </div>
+</div>
+
+<div class="card-columns" >
+  <div class="card animated fadeIn fast" *ngFor="let equipo of equipos; let i = index">
+    <img [src]= " equipo.imgescudo "class="rounded mx-auto d-block" alt="Responsive image">
+    <div class="card-body">
+      <h5 class="card-title"  class="text-center">{{ equipo.nombre }}</h5>
+      <footer class="blockquote-footer">
+          <small class="text-muted">
+            Ubicación <cite title="Source Title">{{ equipo.barrio }}</cite>
+          </small>
+        </footer>
+<br>
+        <!-- nos permite ir a la pagina del heroe-->
+        <a [routerLink]="['/equipos']" class="btn btn-danger btn-block">Regresar</a>
+    </div>
+  </div>   
+</div>

@@ -104,7 +104,7 @@ export class EquiposService {
       barrio: 'Parque Patricios, Buenos Aires',
       imgescudo: 'assets/img/globo.png',
       bio: 'En el año 1903, un grupo de adolescentes alumnos del Colegio Luppi, que se juntaban a jugar al fútbol en los alrededores de la actual estación Sáenz, en el barrio de Nueva Pompeya, decidieron constituir un equipo a los fines de enfrentarse con otros en las mismas condiciones. La primera reunión formal, sin actas ni sede, sucedió el 25 de mayo de ese año en la vereda frente a la casa de Tomás Jeansalle, situada en la calle Ventana 859. El nombre elegido fue «Los Chiquitos de Pompeya» y el lugar de la primera cancha, la calle Cachi entre Traful y Ancaste.En 1905, con el club asentado y bajo la conducción de Hilario Germán Ramponi, se cambió el nombre por el de «Defensores de Ventana», y más tarde se acercaron al club pioneros como Ernesto Dell Isola, Antonio Salgado y Elisardo Fernández.uego, una vez más en las veredas de la calle Ventana, se realizó la primera asamblea, posiblemente el 25 de mayo de 1907. Con la idea de participar orgánicamente en los torneos de las asociaciones reconocidas, con Américo Stefanini como principal impulsor de la iniciativa, decidieron regularizar el club bajo el nombre de «Verde esperanza y no pierde» (o «Verde esperanza y nunca pierde»), tras sugerirse otros que no prosperaron, como «Defensores de Nueva Pompeya», incluido un insólito «Defensores de Villa Crespo». Algunas narraciones suponen que no les alcanzó el dinero (dos pesos con cincuenta) para tanta cantidad de letras, otras sostienen que en realidad el librero, de apellido Richino, les recomendó un nombre más corto, ya que el elegido era muy extenso para denominar a un club de fútbol. Así fue que, en una de las paredes, había un aviso comercial (o almanaque) con la leyenda “El Huracán”, y los muchachos se decidieron por ese nombre. El primer sello del club decía: “CLUB EL URACÁN - Calle VENTANA 859”. La ausencia de la letra “H” podría deberse a que el librero era de origen italiano y esa letra sólo se usa para ciertas formas de verbo, o simplemente por un olvido o error, aunque, cuando le reclamaron la falta, sólo obtuvieron la devolución de cincuenta centavos, según algunos, o una almohadilla de sellos, según afirman otros. Existen testimonios de que en la comisión directiva el primer presidente fue Agustín Caimi, el secretario Tomás Jeansalle y el tesorero Gastón Brunet. Asimismo, A. Villar fue designado capitán y Ernesto Dell Isola, subcapitán. Además de estos cinco, también estaban en el grupo fundador Américo Steffanini, Juan Fariña, Ángel Cambiasso, Enrique Verni, Vicente Chiarante, E. Lerov, R. Guruchaga, Antonio Salgado, R. Fernández, J. Spagarino, W. Luján, y J. López. ',
-      camiseta: 'assets/img/camisetaglobo.png',
+      camiseta: 'assets/img/camisetaglobo.jpg',
       historiacamiseta: '. El color de su camiseta es blanco, con la insignia y vivos rojos. ',
       imgestadio: 'assets/img/duco.png',
       nomestadio: 'Estadio Tomas A. Ducó',
@@ -147,7 +147,7 @@ export class EquiposService {
       ubicacion: 'Avenida 60 y 118',
       fechaestadio: '22 de marzo de 1923 ',
       apodo: 'Lobo o Triperos',
-      imghinchada: 'assets/img/triperos.png',
+      imghinchada: 'assets/img/triperos.jpg',
       explicacion: 'El apodo de Lobo surge a partir de su estupenda campaña de 1962, cuando muchos equipos grandes perdían de visitante en El Bosque, donde se encuentra el estadio de Gimnasia.El de Triperos tiene que ver con los trabajadores de los frigoríficos de principio de siglo instalados en el por entonces barrio platense de Berisso, volcados mayoritariamente a ser hinchas del club. ',
       idolo: 'Pedro Troglio',
       imgidolo: 'assets/img/pedrot.png',
@@ -176,7 +176,7 @@ export class EquiposService {
       barrio: 'Velez Sársfield',
       imgescudo: 'assets/img/velez.png',
       bio: 'El 1° de enero de 1910, en la casa de Nicolás Marín Moreno, se formalizó la fundación del Club Atlético Argentinos de Vélez Sarsfield. El primer presidente designado fue Luis Barredo y el novel Club constituyó dos equipos: uno de Tercera y otro de Cuarta División. El uniforme que se utilizó fueron las clásicas camisetas blancas, que estaban al alcance de todos, y los partidos de local se disputaban en un potrero de Ensenada y Provincias Unidas. Dos años más tarde las autoridades establecen un cambio en el uniforme oficial: camisetas azul marino y pantalones cortos blancos.',
-      camiseta: 'assets/img/camisetavelez.png',
+      camiseta: 'assets/img/camisetavelez.jpg',
       historiacamiseta: '¿Cómo llego el club de Liniers, que originalmente llevaba una indumentaria verde, roja y blanca en franjas en honor a sus fundadores de origen italiano, a adoptar la peculiar y única camiseta blanca con una franja en V azul? En 1933, un comerciante ofreció al club fortinero un lote de camisetas de rugby que no había logrado vender a un club australiano. El diseño encantó a los dirigentes velezanos quienes decidieron adoptar la v azulada como símbolo del club que iba como anillo al dedo con el nombre del club.',
       imgestadio: 'assets/img/estadiovelez.png',
       nomestadio: 'Estadio José Amalfitani',
@@ -255,7 +255,7 @@ export class EquiposService {
       ubicacion: 'Bv. Avellaneda entre Av. Génova y el Paseo Ribereño',
       fechaestadio: '1978',
       apodo: 'Canallas o Academia',
-      imghinchada: 'assets/img/canallas.png',
+      imghinchada: 'assets/img/canallas.jpg',
       explicacion: 'Lo de "Canallas" ya se explicó en el apodo de Newells: tuvo que ver con que el club se negó a participar de un partido amistoso en beneficio de un hospital que trataba leprosos."La Academia" nació al ganarle un partido a Racing en 1915, La Academia "original" y uno de los mejores equipos de la época. ',
       idolo: 'Aldo Pedro Poy',
       imgidolo: 'assets/img/aldopedropoy.png',
@@ -267,7 +267,7 @@ export class EquiposService {
       barrio: 'Mendoza',
       imgescudo: 'assets/img/tomba.png',
       bio: 'Godoy Cruz nació como institución en el año 1921. Todo comenzó cuando un grupo de amigos, reunidos en el «Bar Victoria» (ubicado enfrente de la plaza departamental en ese entonces), decidieron fundar un club, aprovechando el auge que había en la época. Fue así como nació, el 1 de junio de 1921, el Club Sportivo Godoy Cruz con la presidencia novicia de Don Romero Garay.Los fundadores, desde un comienzo, se propusieron realizar un proyecto ambicioso que abarcara la práctica de distintas disciplinas: tales como el fútbol —deporte de enorme crecimiento en toda la región—, pesas para hacer gimnasia, ajedrez y boxeo. Justamente a partir de este último deporte —hoy en día Mendoza es una de las principales en esta materia— se inició en el club un personaje que la historia pondría en un lugar lleno de protagonismo: Feliciano Gambarte. En octubre de 1921, Gambarte se transformó en el entrenador físico de boxeo, y hoy el estadio de fútbol del club lleva su nombre muy bien puesto, ubicado en la calle Balcarce del Departamento de Godoy Cruz. ',
-      camiseta: 'assets/img/camisetatomba.png',
+      camiseta: 'assets/img/camisetatomba.jpg',
       historiacamiseta: 'Cuenta una de las versiones que el presidente del club de Mendoza, Don Feliciano Gambarte había quedado encantado con el diseño de la camiseta del Porto de Portugal que usaba a principios del Siglo XX y la pidió prestada para presentarsela a los dirigentes del club como propuesta para la camiseta del Tomba. La idea fue recibida con los brazos abiertos y Godoy Cruz comenzó a vestir la camiseta azul francia con listones blancos.',
       imgestadio: 'assets/img/malvinas.png',
       nomestadio: 'Estadio Malvinas Argentinas',
@@ -292,7 +292,7 @@ export class EquiposService {
       ubicacion: 'Julio Humberto Grondona al 3660',
       fechaestadio: '22 de agosto de 1964',
       apodo: 'El Viaducto',
-      imghinchada: 'assets/img/arsenales.png',
+      imghinchada: 'assets/img/arsenales.jpg',
       explicacion: 'Proximamente explicacion del apodo',
       idolo: 'Héctor Emilio Grondona',
       imgidolo: 'assets/img/grondona.png',
@@ -403,7 +403,7 @@ export class EquiposService {
       ubicacion: '25 de Mayo 1351',
       fechaestadio: ' 21 de mayo de 1922',
       apodo: 'El Decano',
-      imghinchada: 'assets/img/tucumanos.png',
+      imghinchada: 'assets/img/tucumanos.jpg',
       explicacion: 'Fundado el 15 de agosto de 1904, Atlético Tucumán fue uno de los primeros clubes creados no solo en Tucumán sino en todo el Norte Argentino. Se lo denomina "El Decano" por su condición de primer club que se dedicó a la práctica del fútbol en la capital de la provincia.',
       idolo: 'Luis Miguel Rodríguez',
       imgidolo: 'assets/img/lapulgarodriguez.png',
@@ -419,6 +419,18 @@ export class EquiposService {
 
     getEquipo( idx: string) {
         return this.equipos[idx];
+    }
+// buscador equipo
+    buscarEquipos( termino: string ) {
+          const equiposArr: Equipo[] = [];
+
+          for (const equipo of this.equipos) {
+               const nombre = equipo.nombre.toLowerCase();
+               if ( nombre.indexOf( termino ) >= 0 ) {
+                        equiposArr.push( equipo );
+                  }
+          }
+          return equiposArr;
     }
 }
 

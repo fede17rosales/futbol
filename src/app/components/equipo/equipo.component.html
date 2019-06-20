@@ -22,7 +22,7 @@
         </button> 
         <div class="card mb-3" *ngIf="mostrarcamiseta">
             <h3>Nuestra Segunda piel</h3>
-            <img [src]= " equipo.camiseta "class="figure-img img-fluid rounded" alt="...">
+            <img [src]= " equipo.camiseta "class="rounded mx-auto d-block" alt="...">
             <div class="card-body">
               <p class="card-text">{{ equipo.historiacamiseta }}</p>
             </div>
@@ -46,7 +46,7 @@
                 Apodo
             </button> 
              <div class="card mb-3" *ngIf="mostrarapodo">
-              <h3>¿Porque nos dicen {{ equipo.apodo }}?</h3>
+              <h3>¿Porque nos llaman {{ equipo.apodo }}?</h3>
               <img [src]= " equipo.imghinchada "class="rounded mx-auto d-block" alt="...">
               <div class="card-body">
                 <p class="card-text">{{ equipo.explicacion }}</p>
@@ -60,7 +60,7 @@
           <div class="card mb-3" *ngIf="mostraridolo">
               <div class="card-body">
                   <h3 class="card-title">El ídolo:{{ equipo.idolo }}</h3>
-                <img [src]= " equipo.imgidolo "class="rounded mx-auto d-block" alt="...">
+                <img [src]= " equipo.imgidolo "class="figure-img img-fluid rounded" alt="...">
                 <p class="card-text">{{ equipo.descripidolo }}</p>
               </div>
             </div>

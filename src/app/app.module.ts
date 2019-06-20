@@ -19,6 +19,7 @@ import { CampeonatoslocalesComponent } from './components/campeonatoslocales/cam
 import { CompeonatolocalComponent } from './components/compeonatolocal/compeonatolocal.component';
 import { CampeonatosintersComponent } from './components/campeonatosinters/campeonatosinters.component';
 import { CampeonatointerComponent } from './components/campeonatointer/campeonatointer.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CampeonatointerComponent } from './components/campeonatointer/campeonat
     CampeonatoslocalesComponent,
     CompeonatolocalComponent,
     CampeonatosintersComponent,
-    CampeonatointerComponent
+    CampeonatointerComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,
