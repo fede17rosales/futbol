@@ -18,8 +18,7 @@ export class InicioComponent implements OnInit {
           tres: 'assets/img/frase3.png',
           cuatro: 'assets/img/frase4.png',
           cinco: 'assets/img/frase5.png',
-          seis: 'assets/img/frase6.png',
-          siete: 'assets/img/frase7.png'
+          seis: 'assets/img/frase6.png'
     }
 ];
 getFrases(): Frases[] {
@@ -39,6 +38,6 @@ export interface Frases {
   cuatro: string;
   cinco: string;
   seis: string;
-  siete: string;
+
   }
 
