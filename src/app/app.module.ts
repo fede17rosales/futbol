@@ -8,6 +8,7 @@ import { APP_ROUTING } from './app.routes';
 import { EquiposService } from './components/servicios/equipos.service';
 import { CampeonatosLocales } from './components/servicios/campeonatos.locales.service';
 import { CampeonatosInternacionales } from './components/servicios/campeonatointer.service';
+import { Seleccion } from './components/servicios/seleccion.service';
 
 // componentes
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { CompeonatolocalComponent } from './components/compeonatolocal/compeonat
 import { CampeonatosintersComponent } from './components/campeonatosinters/campeonatosinters.component';
 import { CampeonatointerComponent } from './components/campeonatointer/campeonatointer.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { SeleccionComponent } from './components/seleccion/seleccion.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     CompeonatolocalComponent,
     CampeonatosintersComponent,
     CampeonatointerComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    SeleccionComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
   providers: [
     EquiposService,
     CampeonatosLocales,
-    CampeonatosInternacionales
+    CampeonatosInternacionales,
+    Seleccion
   ],
   bootstrap: [AppComponent]
 })

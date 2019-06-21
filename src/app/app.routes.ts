@@ -9,6 +9,7 @@ import { CompeonatolocalComponent } from './components/compeonatolocal/compeonat
 import { CampeonatosintersComponent } from './components/campeonatosinters/campeonatosinters.component';
 import { CampeonatointerComponent } from './components/campeonatointer/campeonatointer.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { SeleccionComponent } from './components/seleccion/seleccion.component';
 // tslint:disable-next-line:variable-name
 // rutas de nuestros componentes
 
@@ -21,6 +22,7 @@ const APP_ROUTES: Routes = [
     { path: 'campeonatosinter', component: CampeonatosintersComponent },
     { path : 'buscar/:termino', component: BuscadorComponent },
     { path: 'inter/:idinter', component: CampeonatointerComponent },
+    { path: 'seleccion', component: SeleccionComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

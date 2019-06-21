@@ -1,0 +1,81 @@
+<div class="card" >
+  <div class="card animated fadeIn fast" *ngFor="let select of selectarg; let i = index">
+    <img [src]= " select.img "class="rounded mx-auto d-block" alt="Responsive image">
+    <div class="card-body">
+      <h5 class="card-title"  class="text-center">{{ select.nombre }}</h5>
+     <!--historia-->
+      <button (click)=" mostrarhistoria = !mostrarhistoria" class="btn btn-outline-primary btn-block">
+        Historia
+    </button> 
+      <div class="card mb-3" *ngIf="mostrarhistoria">
+        <div class="card-body" >
+            <img [src]= " select.camiseta "class="rounded mx-auto d-block" alt="Responsive image">
+            <h3>Nuestra historia</h3>
+          <p class="card-text">{{ select.historia }}</p>
+        </div>
+      </div>
+    <!--Campeonesmundiales-->
+    <button (click)=" mostrarcampeonesm = !mostrarcampeonesm" class="btn btn-outline-primary btn-block">
+        Campeones Mudiales
+      </button> 
+      <div class="col" *ngIf="mostrarcampeonesm">
+        <br>
+        <ul class="list-group">
+                <li *ngFor="let campeon of select.campeonesmundiales;let i = index;" class="list-group-item">
+                   {{ i + 1 }}) {{ campeon }} </li>
+            </ul>
+      </div>
+      <!--MayoresPresencias-->
+      <button (click)=" mostrarpresencias= !mostrarpresencias" class="btn btn-outline-primary btn-block">
+          Mayores Presencias
+        </button> 
+        <div class="col" *ngIf="mostrarpresencias">
+          <br>
+          <ul class="list-group">
+                  <li *ngFor="let campeon of select.mayorespresencias;let i = index;" class="list-group-item">
+                     {{ i + 1 }}) {{ campeon }} </li>
+              </ul>
+        </div>
+      <!--goleadoresmaximos-->
+      <button (click)=" mostrargoleadores = !mostrargoleadores" class="btn btn-outline-primary btn-block">
+          Goleadores Maximos
+        </button> 
+        <div class="col" *ngIf="mostrargoleadores">
+          <br>
+          <ul class="list-group">
+                  <li *ngFor="let campeon of select.goleadoresmaximos;let i = index;" class="list-group-item">
+                     {{ i + 1 }}) {{ campeon }} </li>
+              </ul>
+        </div>
+        <!--aportesseleccion-->
+        <button (click)=" mostraraportes = !mostraraportes" class="btn btn-outline-primary btn-block">
+            Aportes
+          </button> 
+          <div class="col" *ngIf="mostraraportes">
+            <br>
+            <ul class="list-group">
+                    <li *ngFor="let campeon of select.aportesseleccion;let i = index;" class="list-group-item">
+                       {{ i + 1 }}) {{ campeon }} </li>
+                </ul>
+          </div>
+          <!--jugadoresnotables-->
+          <button (click)=" mostrarjugnotables = !mostrarjugnotables" class="btn btn-outline-primary btn-block">
+              Jugadores Notables
+            </button> 
+            <div class="col" *ngIf="mostrarjugnotables">
+              <br>
+              <ul class="list-group">
+                      <li *ngFor="let campeon of select.jugadoresnotables;let i = index;" class="list-group-item">
+                         {{ i + 1 }}) {{ campeon }} </li>
+                  </ul>
+            </div>
+
+
+    </div>
+    <a [routerLink]="['/inicio']" class="btn btn-danger btn-block">Regresar</a>
+  </div>
+    </div>
+
+
+
+        
